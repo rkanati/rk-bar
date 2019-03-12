@@ -1,0 +1,51 @@
+
+* {
+    border: none;
+    border-radius: 0;
+    min-height: 28px;
+    font-family: ui, sans-serif;
+    font-weight: normal;
+    font-size: 11pt;
+}
+
+window#bar {
+    background: rgba(8, 12, 16, 0.8);
+    border-bottom: 2px solid dimgrey;
+    color: white;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    background: transparent;
+    border-bottom: 2px solid transparent;
+    color: white;
+}
+
+#workspaces button.visible {
+    background: #64727d;
+}
+
+#workspaces button.focused {
+    background: #64727d;
+    border-bottom: 2px solid white;
+}
+
+#workspaces button.urgent {
+    color: black;
+    background: #ff4081;
+    border-bottom: 2px solid orange;
+}
+
+label {
+    padding: 0 5px;
+    color: white;
+}
+
+#title label {
+    color: white;
+}
+
+#title label.urgent {
+    color: orange;
+}
+

@@ -1,0 +1,31 @@
+[package]
+name    = "rk-bar"
+version = "0.1.0"
+authors = ["Rachel K <raech.kanati@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+chrono     = "0.4"
+glib       = "0.10"
+gio        = "0.9"
+gdk        = "0.13"
+gdk-sys    = "0.10"
+gdk-pixbuf = "0.9"
+swayipc    = "2.7"
+
+[dependencies.gtk]
+version = "0.9"
+features = ["v3_24"]
+
+[dependencies.gtk-layer-shell]
+#path = "gtk-layer-shell-rs"
+version = "0.2"
+
+[dependencies.wayland-client]
+version = "0.28"
+features = ["use_system_lib"]
+
+[dependencies.wayland-protocols]
+version = "0.28"
+features = ["unstable_protocols", "client"]
+
